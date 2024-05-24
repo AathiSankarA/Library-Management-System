@@ -1,0 +1,25 @@
+<div>
+    <h3>
+        Hello {{user.Name}}!
+    </h3>
+    you have {{user.nBooks}} active books in your account.{% if user.defaults %} Oops! you have had {{user.defaults}} so far {% endif %}
+    <br> 
+    these are your current status as the library user.<br>
+    Active Books:
+    <ul>
+    {% for i in user.Books%}
+    {% if i.status == 1%}
+    <li>{{i.bookName}} , expires on {{i.expiry}}</li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+    Requested Books:
+    <ul>
+    {% for i in user.Books%}
+    {% if i.status == 0%}
+    <li>{{i.bookName}} </li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+</div>

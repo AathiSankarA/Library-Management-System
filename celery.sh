@@ -1,0 +1,1 @@
+celery -A app.celery beat --max-interval 1 -l INFO & celery -A app.celery worker -l INFO
