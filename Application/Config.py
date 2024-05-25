@@ -25,10 +25,9 @@ class LocalDevelopmentConfig(Config):
     CACHE_TYPE = "RedisCache"
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
-    MAIL_USERNAME = 'webappmad@gmail.com'
-    MAIL_PASSWORD = 'kshq pkdq bupp uvnh'
+    MAIL_USERNAME = '<your mail>'
+    MAIL_PASSWORD = '<your app password form mail service provider>'
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
 
-
-# https://www.youtube.com/watch?v=qxE9gHhJNdo
+
