@@ -4,6 +4,8 @@ This app allows admiistrators to upload books (ASCII text files) and users to le
 - Search for books
 - Request for a book
 - Approve/ Reject a request - Admin
+- Auto revoke access to book
+- Email notifications
 
 ## Development Stack
 - Python
